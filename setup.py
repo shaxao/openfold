@@ -106,7 +106,7 @@ setup(
             ),
         }
     )],
-    cmdclass={'build_ext': BuildExtension},
+    cmdclass={'build_ext': BuildExtension.with_options(use_ninja=False)},
     classifiers=[
         'License :: OSI Approved :: Apache Software License',
         'Operating System :: POSIX :: Linux',
